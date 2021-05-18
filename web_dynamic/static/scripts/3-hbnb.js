@@ -19,3 +19,9 @@ $(document).ready(function () {
     $('.amenities h4').text(Object.values(amens).join(', '));
   });
 });
+
+$.ajax({
+type: 'POST',
+url: 'http://0.0.0.0:5001/api/v1/places_search/',
+contentType: 'application/json',
+data: JSON.stringify({})
